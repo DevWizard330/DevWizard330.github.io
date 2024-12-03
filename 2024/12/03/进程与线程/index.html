@@ -19,16 +19,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/archives/2024/11/"/>
+    <link rel="canonical" href="http://example.com/2024/12/03/进程与线程/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2024/11/index.html">
+        <meta name="description" content="1. 什么是进程(Process)？在进程模型中，计算机上所有可运行的软件（通常也包括操作系统），被组织成若干顺序进程（Sequential Process），简称进程。进程和程序之间的区别是很微妙的，但非常重要。想象一位厨师在制作蛋糕。他有制作蛋糕的食谱，厨房里有许多制作蛋糕的原料（面粉、鸡蛋、糖）。在这个比喻中，食谱是程序（即用适当形式描述的算法），厨师是CPU，做蛋糕的原料就是输入数据。进程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="进程与线程">
+<meta property="og:url" content="http://example.com/2024/12/03/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. 什么是进程(Process)？在进程模型中，计算机上所有可运行的软件（通常也包括操作系统），被组织成若干顺序进程（Sequential Process），简称进程。进程和程序之间的区别是很微妙的，但非常重要。想象一位厨师在制作蛋糕。他有制作蛋糕的食谱，厨房里有许多制作蛋糕的原料（面粉、鸡蛋、糖）。在这个比喻中，食谱是程序（即用适当形式描述的算法），厨师是CPU，做蛋糕的原料就是输入数据。进程">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-12-03T06:22:37.000Z">
+<meta property="article:modified_time" content="2024-12-03T07:08:40.427Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     
@@ -42,7 +46,7 @@
     
     <title>
         
-            Archive: 2024/11 | WizardDev&#39;s Blog
+            进程与线程 | WizardDev&#39;s Blog
         
     </title>
 
@@ -364,71 +368,185 @@
             <div class="main-content">
 
                 
-                    <div class="archive-container shadow-none hover:shadow-none sm:shadow-redefine sm:hover:shadow-redefine-hover">
-    
-<div class="archive-list-container">
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">4</span>
-            </div>
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
             
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
-                
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='12-03'>
-                    
-                    <a href="/2024/12/03/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">进程与线程</span>
-                    </a>
-                    
-                
-                    
-                    
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">进程与线程</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">WizardDev</span>
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='11-08'>
-                    
-                    <a href="/2024/11/08/hello-world/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">Hello World</span>
-                    </a>
-                    
-                
-                    
-                    
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-20'>
-                    
-                    <a href="/2024/10/20/%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%88%9D%E6%AD%A5%E6%8E%A2%E7%B4%A2/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">注册表初步探索</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='09-23'>
-                    
-                    <a href="/2024/09/23/%E9%81%8D%E5%8E%86%E9%93%BE%E8%A1%A8%E6%97%B6%E5%88%9B%E5%BB%BA%E7%AD%89%E9%95%BF%E9%93%BE%E8%A1%A8/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">遍历链表时创建等长链表</span>
-                    </a>
-                    
-                
-                </li> <!-- Ensure the last item is properly closed -->
-            </ul>
-        </section>
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-12-03 14:22:37</span>
+        <span class="mobile">2024-12-03 14:22:37</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-12-03 15:08:40</span>
+            <span class="mobile">2024-12-03 15:08:40</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="1-什么是进程-Process-？"><a href="#1-什么是进程-Process-？" class="headerlink" title="1. 什么是进程(Process)？"></a>1. 什么是进程(Process)？</h2><p>在进程模型中，计算机上所有可运行的软件（通常也包括操作系统），被组织成若干顺序进程（Sequential Process），简称进程。<br>进程和程序之间的区别是很微妙的，但非常重要。想象一位厨师在制作蛋糕。他有制作蛋糕的食谱，厨房里有许多制作蛋糕的原料（面粉、鸡蛋、糖）。在这个比喻中，食谱是程序（即用适当形式描述的算法），厨师是CPU，做蛋糕的原料就是输入数据。进程就是厨师阅读食谱、取出各种原材料以及烘焙蛋糕等一系列动作的总和。<br>假设厨师在制作蛋糕的过程中不小心切到了手，那么他需要记录下他照着食谱把蛋糕做到哪儿了（保存进程的当前状态），然后按照急救手册为自己的手实施医疗救治，也就是说厨师从制作蛋糕这个进程，切换到了一个更高优先级的进程————实施医疗救治。这里每个进程拥有各自的程序（食谱和急救手册），当医疗救治实施完毕后，厨师又开始继续制作蛋糕，从他离开时的那一步继续做下去。<br>相信通过上述比喻很容易理解：<strong>一个进程就是一个正在执行程序的实例</strong>，包括程序计数器、寄存器和变量的当前值。</p>
+<h2 id="2-进程的创建"><a href="#2-进程的创建" class="headerlink" title="2. 进程的创建"></a>2. 进程的创建</h2><p>4种主要事件会导致进程的创建：</p>
+<ul>
+<li>系统初始化</li>
+<li>正在运行的系统执行了创建进程的系统调用</li>
+<li>用户请求创建一个新进程</li>
+<li>一个批处理作业的初始化<br>下面开始逐一解释这4种情况。</li>
+</ul>
+<h3 id="2-1-系统初始化"><a href="#2-1-系统初始化" class="headerlink" title="2.1 系统初始化"></a>2.1 系统初始化</h3><p>在启动操作系统时，通常会创建若干个进程，其中有些是<strong>前台进程</strong>，有些是<strong>后台进程</strong>。前台进程是同用户交互并替用户完成工作的进程，后台进程与用户无关，却具有某些专门的功能。例如，用户启动电脑后能够看到桌面，这就是在启动操作系统时创建的前台进程。再比如接收电子邮件的进程，用户无法看到这个进程，且这个进程在一天的绝大部分时间都在睡眠，但是当电子邮件到达时便会突然被唤醒，这就是后台进程。停留在后台处理诸如电子邮件、web页面、新闻、打印请求之类活动的进程称为$$(daemon)</p>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/11/08/hello-world/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script data-swup-reload-script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
+    <script data-swup-reload-script>
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: 'Ov23li0kiv4OnCBc9Cut',
+                    clientSecret: '9ac2b41d65638c7f89a10785634befb7d2adc997',
+                    repo: 'Comment_Storage',
+                    owner: 'DevWizard330',
+                    admin: ['DevWizard330'],
+                    id: __gitalk__pathname,
+                    language: 'en',
+                    proxy: 'https://github.com/login/oauth/access_token'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('true') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
 </div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">进程与线程</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%9B%E7%A8%8B-Process-%EF%BC%9F"><span class="nav-text">1. 什么是进程(Process)？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-text">2. 进程的创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E7%B3%BB%E7%BB%9F%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">2.1 系统初始化</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
 
                 
 
@@ -510,6 +628,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
